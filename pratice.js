@@ -109,3 +109,83 @@
     
 // }
 // duplicate([1,2,2,2,2,2,23,3,3,3,3,3,4,45])
+
+//sum of array
+
+// const sum = (arr)=>{
+
+//     let result = 0
+
+//     for(let i=0; i<arr.length;i++){
+//         result +=arr[i]
+//     }
+//     console.log(result)
+// }
+// sum([1,2,4,3,4])
+
+
+
+
+//fibonaicc series
+
+// const findFib = (n)=>{
+
+//     let a = 0;
+//     let b = 1;
+
+//     if(n==0 || n==1){
+//         console.log(n)
+//         return
+//     }
+
+//     for(let i=2;i<n;i++){
+//        let temp = a+b
+//         a=b 
+//         b=temp
+//     }
+//     console.log(b)
+// }
+// findFib(7)
+
+
+
+
+//check anagram
+
+// const checkAnagram = (check,str)=>{
+
+//     let sortCheck = check.split('').sort().join('')
+//     let sortStr = str.split('').sort().join('')
+
+//     if(sortCheck.length != sortStr.length)
+//     {
+//         return console.log("not anagram")
+//     }
+
+//     if(sortCheck == sortStr){
+//         console.log("is anagram")
+//         return
+//     }
+//     console.log("not anagram")
+// }
+// checkAnagram("ram","mard")
+
+
+
+
+//\COUNT THE VOWEL 
+
+const vowels = (str)=>{
+    let count = 0
+
+    let vowel = ['a','e','i','o','u']
+
+    for(let i=0; i<str.length;i++){
+        if(vowel.includes(str[i]))
+        {
+            count++
+        }
+    }
+    console.log(count)
+}
+vowels('hello')

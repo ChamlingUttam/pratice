@@ -9,8 +9,8 @@ const checkAnagram = (str) => {
         return;
     }
 
-    let sortWord = word.split('').sort();
-    let strWord = str.split('').sort();
+    let sortWord = word.split('').sort().join('');
+    let strWord = str.split('').sort().join('');
 
     for (let i = 0; i < sortWord.length; i++) {
         if (sortWord[i] !== strWord[i]) {
@@ -22,4 +22,4 @@ const checkAnagram = (str) => {
     console.log("is anagram");
 }
 
-checkAnagram('abcdfge'); // ✅ is anagram
+checkAnagram('abcdegf'); // ✅ is anagram
