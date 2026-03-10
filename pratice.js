@@ -208,25 +208,116 @@
 // console.log(vowels("aeioueeee"))
 
 
-//two sum
- const twoSum = (arr,target)=>{
+// //two sum
+//  const twoSum = (arr,target)=>{
 
-    let seen = []
-    let result = []
+//     let seen = []
+//     let result = []
 
-    for(let i =0; i<arr.length;i++){
-        let toFind = target - arr[i]
+//     for(let i =0; i<arr.length;i++){
+//         let toFind = target - arr[i]
 
-        if(seen.includes(toFind)){
-             result.push(toFind,arr[i])
-             break
-        }
-        else{
-            seen.push(arr[i])
-        }
-    }
-    return result
+//         if(seen.includes(toFind)){
+//              result.push(toFind,arr[i])
+//              break
+//         }
+//         else{
+//             seen.push(arr[i])
+//         }
+//     }
+//     return result
 
- }
+//  }
 
- console.log(twoSum([1,2,3,4],6))
+//  console.log(twoSum([1,2,3,4],6))
+
+
+
+
+//generate random number 
+
+// const generate = (n)=>{
+
+//     let randomNumber =[];
+    
+
+//     for(let i=0;i<n;i++){
+//            randomNumber.push(Math.floor(Math.random()*10))
+//     }
+
+//     console.log(randomNumber)
+// }
+// generate(4)
+
+
+//remove dupilcate conscutive string
+
+// const remove = (arr)=>{
+
+    
+//     let first = [arr[0]]
+
+//     for(let i=1;i<arr.length;i++){
+//         if(arr[i]!==arr[i-1]){
+//             first.push(arr[i])
+//         }
+//     }
+//     return first
+
+// }
+// console.log(remove([1,2,3,4,4,4,4,4,4,2]))
+
+
+
+
+
+//remove duplicate array
+
+// const remove = (arr)=>{
+//     let result =[arr[0]]
+
+//     for(let i=0; i<arr.length;i++){
+//         if(!result.includes(arr[i]))
+//         {
+//             result.push(arr[i])
+//         }
+
+//     }
+//     return result 
+// }
+// // remove([1,2,3,3,44,4,4,4,4,43,3,2,1])
+// console.log(remove([1,1,12,3,2,3,4,5,6,5,3,2,1]))
+
+
+// first latter captial
+
+// const capital = (str)=>{
+
+//     let splitWord = str.split(" ")
+
+//     let result = []
+
+//     for(let i=0; i<splitWord.length;i++){
+//         let word = splitWord[i]
+//         result.push(word[0].toUpperCase()+word.slice(1))
+//     }
+//     return result.join(" ")
+// }
+// console.log(capital("hello us are"))
+
+
+
+//anagrams check
+
+// const anagram = (str,check)=>{
+// let sortStr = str.split('').sort().join()
+// let sortCheck = check.split('').sort().join()
+
+// if(!sortStr.includes(sortCheck)){
+//     return false
+// }
+// return true
+
+
+// }
+// console.log(anagram("qwertasy","ytrewsq"))
