@@ -175,17 +175,58 @@
 
 //\COUNT THE VOWEL 
 
-const vowels = (str)=>{
-    let count = 0
+// const vowels = (str)=>{
+//     let count = 0
 
-    let vowel = ['a','e','i','o','u']
+//     let vowel = ['a','e','i','o','u']
 
-    for(let i=0; i<str.length;i++){
-        if(vowel.includes(str[i]))
-        {
-            count++
+//     for(let i=0; i<str.length;i++){
+//         if(vowel.includes(str[i]))
+//         {
+//             count++
+//         }
+//     }
+//     console.log(count)
+// }
+// vowels('hello')
+
+
+// const vowels = (str)=>{
+//     let count = 0
+
+//     let vowel = ['a','e','i','o','u']
+
+//     for (let i=0; i<str.length;i++){
+//         if(vowel.includes(str[i]))
+//         {
+//             count++
+//         }
+//     }
+//     return count
+
+// }
+// console.log(vowels("aeioueeee"))
+
+
+//two sum
+ const twoSum = (arr,target)=>{
+
+    let seen = []
+    let result = []
+
+    for(let i =0; i<arr.length;i++){
+        let toFind = target - arr[i]
+
+        if(seen.includes(toFind)){
+             result.push(toFind,arr[i])
+             break
+        }
+        else{
+            seen.push(arr[i])
         }
     }
-    console.log(count)
-}
-vowels('hello')
+    return result
+
+ }
+
+ console.log(twoSum([1,2,3,4],6))
