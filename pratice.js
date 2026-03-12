@@ -321,3 +321,39 @@
 
 // }
 // console.log(anagram("qwertasy","ytrewsq"))
+
+
+//swap two number
+// const swap = (arr,p1,p2)=>{
+
+//     let temp = arr[p1]
+//     arr[p1] = arr[p2]
+//     arr[p2] = temp
+
+//     return arr
+// }
+
+// console.log(swap([1,2,3,4,5],2,4))
+
+
+//swap two elements which are gretaer than 5
+
+const swap = (arr)=>{
+
+    let index = []
+    for(let i=0; i<arr.length;i++){
+        if(arr[i]>5)
+        {
+            index.push(i)
+        }
+    }
+
+    if(index.length >=2){
+        let temp = arr[index[0]]
+        arr[index[0]]=arr[index[1]]
+        arr[index[1]] = temp
+    }
+
+    return arr
+}
+console.log(swap([1,6,3,4,5,7]))
