@@ -75,32 +75,143 @@
 
 //valid parentheses
 
-const isValid = (par)=>{
+// const isValid = (par)=>{
 
-    let map = {
-        ')':'(',
-        '}':'{',
-        ']':'['
-    }
+//     let map = {
+//         ')':'(',
+//         '}':'{',
+//         ']':'['
+//     }
 
-    let stack = []
+//     let stack = []
 
-    for(let i= 0; i<par.length;i++){
-        let ch = par[i]
+//     for(let i= 0; i<par.length;i++){
+//         let ch = par[i]
 
-        if(ch === "(" || ch === "{" || ch==="["){
-            stack.push(ch)
-        }
-        else{
-            let last = stack.pop()
-        if(last !==map[ch])
-            return false
-        }
+//         if(ch === "(" || ch === "{" || ch==="["){
+//             stack.push(ch)
+//         }
+//         else{
+//             let last = stack.pop()
+//         if(last !==map[ch])
+//             return false
+//         }
 
         
-    }
-return stack.length ===0
+//     }
+// return stack.length ===0
 
-}
+// }
 
-console.log(isValid('([]){}'))
+// console.log(isValid('([]){}'))
+
+
+
+
+
+
+
+
+
+
+//remove duplicate in array
+
+// const remove = (arr)=>{
+
+//     let result = [arr[0]]
+
+//     for(let i=1 ; i<arr.length;i++){
+//         if(!result.includes(arr[i])){
+//            result.push(arr[i])
+//         }
+//     }
+//     return result
+
+// }
+
+// console.log(remove([1,2,2,2,2,3,4,5,6,3,2,1]))
+
+
+
+
+
+
+//valid parentheses
+
+// const valid = (p)=>{
+
+//     let stack = []
+
+//     const map = {
+//         ")":"(",
+//         "}":"{",
+//         "]":"[",
+//     }
+
+//     for(let i=0;i<p.length;i++){
+//         let ch = p[i]
+
+//         if(ch==="(" || ch==="{" || ch==="[")
+//         {
+//             stack.push(p[i])
+//         }
+//         else{
+//             let last = stack.pop()
+
+//             if(last !== map[ch]){
+//                 return false
+//             }
+//         }
+//     }
+//     return stack.length === 0
+// }
+
+// console.log(valid('(){}[]('))
+
+
+
+
+//remove duplicate from the array
+
+// const remove = (arr)=>{
+
+//     let seen = [arr[0]]
+
+//     for (let i= 1; i<arr.length;i++){
+//         if(!seen.includes(arr[i]))
+//         {
+//             seen.push(arr[i])
+//         }
+//     }
+//     return seen
+
+
+// }
+
+// console.log(remove([1,2,3,4,3,3,2,1,7,6,7,6,1]).sort())
+// console.log(remove([1,2,3,4,3,3,2,1,7,6,7,6,1]))
+
+
+
+
+//common longest prefix
+
+// const common = (arr)=>{
+
+//     let prefix = ''
+//     let first = arr[0]
+
+//     for(let i=0;i<first.length;i++){
+//         let ch=first[i]
+
+//         for(let j=1;j<arr.length;j++){
+//             if(arr[j][i] !== ch){
+//                 return prefix
+//             }
+//         }
+//         prefix += ch
+//     }
+//     return prefix
+// }
+
+// console.log(common(['flower','flood','flow']))

@@ -276,7 +276,7 @@
 // const remove = (arr)=>{
 //     let result =[arr[0]]
 
-//     for(let i=0; i<arr.length;i++){
+//     for(let i=1; i<arr.length;i++){
 //         if(!result.includes(arr[i]))
 //         {
 //             result.push(arr[i])
@@ -338,22 +338,22 @@
 
 //swap two elements which are gretaer than 5
 
-const swap = (arr)=>{
+// const swap = (arr)=>{
 
-    let index = []
-    for(let i=0; i<arr.length;i++){
-        if(arr[i]>5)
-        {
-            index.push(i)
-        }
-    }
+//     let index = []
+//     for(let i=0; i<arr.length;i++){
+//         if(arr[i]>5)
+//         {
+//             index.push(i)
+//         }
+//     }
 
-    if(index.length >=2){
-        let temp = arr[index[0]]
-        arr[index[0]]=arr[index[1]]
-        arr[index[1]] = temp
-    }
+//     if(index.length >=2){
+//         let temp = arr[index[0]]
+//         arr[index[0]]=arr[index[1]]
+//         arr[index[1]] = temp
+//     }
 
-    return arr
-}
-console.log(swap([1,6,3,4,5,7]))
+//     return arr
+// }
+// console.log(swap([1,6,3,4,5,7]))
