@@ -357,3 +357,46 @@
 //     return arr
 // }
 // console.log(swap([1,6,3,4,5,7]))
+
+
+
+
+// reverse the string
+
+// const reverse = (str)=>{
+
+//     // let splitStr = str.split('')
+//     let result = []
+
+//     for(let i= str.length -1 ; i>=0;i--){
+//         result.push(str[i])
+//     }
+
+//     return result
+
+// }
+
+// console.log(reverse([1,2,3]))
+
+
+
+// remove elements 
+// const remove = (nums,val)=>{
+
+//     let k = 0
+
+//     for (let i = 0; i<nums.length; i++){
+//         if(nums[i] !== val){
+//             nums[k] == nums[i]
+//             k++
+//         }
+//     }
+//     return k
+// }
+
+// let nums = [1,2,3,3,4,4,2,1,6,7,8,9,5,5,5]
+
+// let k = remove(nums,1)
+
+// console.log('K:', k)
+// console.log("nums :", nums)
