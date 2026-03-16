@@ -289,4 +289,182 @@
 
 
 
-// 11 
+// 11 maximum in array
+
+// const maxNum = (arr)=>{
+
+//     let max = 0
+
+//     for (let i =0;i<arr.length;i++){
+//         if(max < arr[i]){
+//             max = arr[i]
+//         }
+//     }
+
+//     return max
+// }
+
+// console.log(maxNum([1,2,3,4,5,10]))
+// console.log(maxNum([-1,-2,-3,-4,0]))
+
+
+
+// 12 title CASE
+
+// const title = (str)=>{
+
+//     let arrStr = str.split(' ')
+//     let result = []
+
+//     for(let i=0; i<arrStr.length; i++){
+//         let word = arrStr[i]
+
+//         result.push(word[0].toUpperCase() + word.slice(1))
+        
+//     }
+
+//     return result.join(' ')
+
+
+
+// }
+
+// console.log(title('the word of mine'))
+
+
+
+
+//13 word count 
+
+// const wordCount = (str)=>{
+
+//     let count = 0
+
+//     let splitStr = str.split(' ')
+
+//     for(let i=0;i<splitStr.length;i++){
+//         let line = splitStr[i]
+
+//         count += line.length
+//     }
+//     return count
+
+// }
+
+// console.log(wordCount('hello how are you'))
+
+
+
+
+
+//14 fibonacci series
+
+// const fib = (n)=>{
+
+//     let a = 0
+//     let b =1
+
+//     for(let i=2;i<n;i++){
+//         let temp = a+b;
+//         a=b
+//         b=temp
+//     }
+//     return b
+// }
+
+// console.log(fib(7))
+
+
+
+
+
+//15 power of a number
+
+// const power = (a,n)=>{
+
+//     if(n===0){
+//         return 1
+//     }
+
+//     let isNeagtive = n<0
+//     n = Math.abs(n)
+
+//     let result = 1
+//     for(let i=1;i<=n;i++){
+//         result *= a
+//     }
+//     return isNeagtive ? 1/result : result
+
+
+
+// }
+// console.log(power(2,-1))
+// console.log(power(2,3))
+// console.log(power(2,-3))
+
+
+
+
+
+
+//16 swap two number
+
+// const swap = (a,b)=>{
+
+//     let temp = a
+//     a=b
+//     b=temp
+
+//     console.log(`a is ${a}`)
+//     console.log(`b is ${b}`)
+
+// }
+
+// (swap(4,5))
+
+
+//without third party
+
+// let a = 5
+// let b = 7
+
+// a = a+b
+// b = a - b
+// a = a - b
+
+// console.log(a,b)
+
+
+
+
+
+
+//17 multiplication table
+
+// const table = (n)=>{
+
+//     for (let i=1;i<=10;i++){
+//         console.log(`${n} * ${i} = ${n * i}`)
+//     }
+// }
+
+// table(5)
+
+
+
+
+//minimum in array
+
+// const min = (arr)=>{
+
+//     let result = arr[0]
+
+//     for(let i=0;i<arr.length;i++){
+//         if(result > arr[i]){
+//              result = arr[i]
+//         }
+//     }
+//     return result
+// }
+
+// console.log(min([11,25,6,7]))

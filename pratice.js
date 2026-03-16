@@ -549,3 +549,26 @@ longest common perfix
 // }
 
 // console.log(sum([1,2,3,4,5],9))
+
+
+
+//didit count
+
+const digit = (n)=>{
+
+    let num = Math.abs(n)
+
+    let count  = 0
+
+    while( num > 0)
+    {
+        num = Math.floor(num/10)
+        count ++
+    }
+    return count
+
+
+
+}
+
+console.log(digit(1234))
