@@ -387,7 +387,7 @@
 
 //     for (let i = 0; i<nums.length; i++){
 //         if(nums[i] !== val){
-//             nums[k] == nums[i]
+//             nums[k] = nums[i]
 //             k++
 //         }
 //     }
@@ -396,7 +396,156 @@
 
 // let nums = [1,2,3,3,4,4,2,1,6,7,8,9,5,5,5]
 
-// let k = remove(nums,1)
+// let k = remove(nums,2)
 
 // console.log('K:', k)
-// console.log("nums :", nums)
+// console.log("nums :", nums.slice(0,k))
+
+
+
+
+
+//remove elements
+
+// const remove = (arr,val)=>{
+
+
+//     let k=0
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i] !== val)
+//             {
+//                 arr[k] = arr[i]
+//                 k++
+//             }
+        
+//     }
+//     return k
+// }
+
+// let arr = [1,2,2,3,4,5,6,4,3,2,3,2]
+
+// let val = remove(arr,2)
+
+// console.log(val)
+// console.log(arr)
+
+
+
+
+//remove duplicate elements of desire one
+
+// const remove = (arr,val)=>{
+//     let k =0 
+
+//     for (let i=0;i<arr.length;i++){
+//         if(arr[i] !== val)
+//         {
+//             arr[k] = arr[i]
+//             k++
+//         }
+//     }
+//     return k
+// }
+
+// let arr = [1,2,3,4,5,6,2,1,2,2,2,2,2,2,2]
+
+// let k = remove(arr,2)
+
+// console.log(k)
+// console.log(arr.slice(0,k))
+
+
+//length of the last word
+
+// const length = (str)=>{
+
+
+//     let spiltStr = str.split(' ')
+
+//     let lastWord = spiltStr[spiltStr.length -1]
+
+//     let lastWordLength = lastWord.length
+
+
+//     console.log(lastWord)
+//     console.log(lastWordLength)
+// }
+
+// length('hello there you are')
+
+
+/*
+longest common perfix
+*/
+
+// const prefix = (arr)=>{
+
+//     let empty = ""
+//     let firstElement = arr[0]
+
+//     for(let i = 0; i<firstElement.length ; i++)
+//     {
+//         let ch = firstElement[i]
+//         for(let j=1;j<arr.length;j++)
+//         {
+//             if(arr[j][i] !== ch)
+//             {
+//                 return empty
+//             }
+//         }
+//         empty += ch
+//     }
+//     return ch
+// }
+
+// console.log(prefix(['ram',"race",'rare']))
+
+
+
+//remove duplicate from array
+
+
+// const remove = (arr)=>{
+
+//     let arrSorted = arr.sort()
+
+//     let check = [arr[0]]
+
+//     for(let i=1;i<arr.length;i++){
+//         if(arr[i] !== arr[i-1]){
+//             check.push(arr[i])
+//         }
+//     }
+//     return check
+//     // console.log(arrSorted)
+// }
+
+// console.log(remove([1,2,3,4,5,1,2,3,4,5]))
+
+
+//two sum problem
+
+
+// const sum = (arr,target)=>{
+
+
+//     let seen = []
+//     let result = []
+//     for(let i=0;i<arr.length;i++)
+//     {
+//         let toFind = target - arr[i]
+
+//         if(!seen.includes(toFind))
+//         {
+//             seen.push(arr[i])
+//         }
+//         else{
+//             result.push(toFind,arr[i])
+//         }
+
+
+//     }
+//     return result
+// }
+
+// console.log(sum([1,2,3,4,5],9))

@@ -348,31 +348,66 @@
 // printList(mergedList);
 
 
-const mergeTwoLists = (list1, list2) => {
+// const mergeTwoLists = (list1, list2) => {
 
-    let dummy = { val: -1, next: null };
-    let current = dummy;
+//     let dummy = { val: -1, next: null };
+//     let current = dummy;
 
-    while (list1 !== null && list2 !== null) {
+//     while (list1 !== null && list2 !== null) {
 
-        if (list1.val <= list2.val) {
-            current.next = list1;
-            list1 = list1.next;
-        } else {
-            current.next = list2;
-            list2 = list2.next;
-        }
+//         if (list1.val <= list2.val) {
+//             current.next = list1;
+//             list1 = list1.next;
+//         } else {
+//             current.next = list2;
+//             list2 = list2.next;
+//         }
 
-        current = current.next;
-    }
+//         current = current.next;
+//     }
 
-    if (list1 !== null) {
-        current.next = list1;
-    } else {
-        current.next = list2;
-    }
+//     if (list1 !== null) {
+//         current.next = list1;
+//     } else {
+//         current.next = list2;
+//     }
 
-    return dummy.next;
-};
+//     return dummy.next;
+// };
 
-console.log(mergeTwoLists([1,2,3],[1,2,4,5]))
+// console.log(mergeTwoLists([1,2,3],[1,2,4,5]))
+
+
+
+
+
+
+
+
+
+
+
+//count vowel
+
+// const vowels = (str)=>{
+
+//     let count = 0
+
+//     let vowel = ['a','e','i','o','u']
+
+//     for(let i=0;i<str.length;i++){
+//         if(vowel.includes(str[i]))
+//         {
+//             count ++
+//         }
+//     }
+//     return count
+// }
+
+// console.log(vowels('what is your name'))
+
+
+
+
+
+//
