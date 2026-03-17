@@ -453,7 +453,7 @@
 
 
 
-//minimum in array
+//18 minimum in array
 
 // const min = (arr)=>{
 
@@ -468,3 +468,132 @@
 // }
 
 // console.log(min([11,25,6,7]))
+
+
+
+
+//19 sum of array
+
+// const sum = (arr)=>{
+
+//     // let total = 0
+
+//     // for (let i=0;i<arr.length;i++){
+//     //     total += arr[i]
+//     // }
+//     // return total
+
+
+
+//     return arr.reduce((a,b)=>a+b,0)
+// }
+
+// console.log(sum([1,2,3,4,5]))
+
+
+
+
+// 20 count even and odd numbers
+
+
+
+
+
+
+
+// 21 merge two array
+
+// const merge = (arr1,arr2)=>{
+
+// //    let arr3 = [...arr1 ,...arr2]
+// //    return arr3
+
+
+
+
+// let arr3 = []
+
+// for(let i=0;i<arr1.length;i++){
+//     arr3[arr3.length] = arr1[i]
+// }
+
+// for(let i=0;i<arr2.length;i++){
+//     arr3[arr3.length] = arr2[i]
+// }
+
+// //for sorting the arr3 elements
+
+// for(i=0;i<arr3.length;i++){
+//     for(j=1;j<i;j++){
+
+//     }
+// }
+
+// }
+
+// console.log(merge([1,2,3],[1,2,4,5]))
+
+
+//22 frequency count 
+
+// const frequency = (arr)=>{
+
+//     let freq = {}
+
+//     for(let i=0;i<arr.length;i++)
+//     {
+//         let element = arr[i]
+
+//         if(freq[element]){
+//             freq[element]++
+//         }
+//         else{
+//             freq[element] = 1
+//         }
+//     }
+//     return freq
+
+// }
+
+// console.log(frequency([1,2,2,1,3,4,2,1]))
+
+
+
+// 23 insert an element at specific position
+
+// const positionAt =(arr,position,element)=>{
+
+//     if(position < 0 || position > arr.length){
+//         return false
+//     }
+
+//     for(let i=arr.length;i>position;i--){
+//         arr[i] = arr[i-1]
+//     }
+
+//     arr[position] = element
+//     return arr
+
+// }
+
+// console.log(positionAt([1,2,4,5],2,3))
+
+
+// 24 remove element from array of specific position
+
+
+const remove = (arr,position)=>{
+
+    if(position < 0 || position > arr.length){
+        return false
+    }
+
+    for(let i=position;i<arr.length;i++){
+        arr[i] = arr[i+1]
+    }
+    arr.length = arr.length -1
+    return arr
+
+}
+
+console.log(remove([1,2,3,4,5],2))
