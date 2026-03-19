@@ -594,3 +594,22 @@ longest common perfix
 // }
 
 // console.log(count([1,2,3,4,2,1,3]))
+
+
+
+//count a number of string
+
+const count = (str)=>{
+
+    let splitStr = str.split(' ')
+
+    let result = 0
+    for(let i=0; i<splitStr.length;i++){
+        let line = splitStr[i]
+        result += line.length
+    }
+    return result
+
+}
+
+console.log(count('hsdkm sdfksjf sdfkjs sdfhs'))

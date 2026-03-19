@@ -658,3 +658,130 @@
 // }
 
 // console.log(check([1,2,2,3]))
+
+
+
+
+// 28 find the missing element in the array
+
+// const missing = (arr)=>{
+
+//     let min = arr[0]
+//     let result = []
+//     let n=(arr.at(-1) - min ) + 1
+//     // console.log(arr[i].length  -1 )
+
+
+//     for(let i=min;i<=n;i++){
+//         if(!result.includes(i)){
+//             // result.push(i)
+//             result[result.length] = i
+//         }
+//     }
+//     return result
+// }
+
+// console.log(missing([1,2,4,6]))
+// console.log(missing([6,9,11,10,12,14,15]))
+
+
+
+
+
+
+// 29 remove space without replace()
+
+// const remove = (str)=>{
+
+//     let result = ""
+
+//     console.log(str.length)
+//     for(let i=0;i<str.length;i++){
+//         if(str[i] != " ")
+//         {
+//             result +=str[i]
+//         }
+
+//     }
+//     return result
+
+// }
+
+// console.log(remove('hello world'))
+
+
+
+// 30 find character frequency
+
+// const frequency = (str)=>{
+
+//     let result ={}
+
+//     for(let i=0;i<str.length;i++){
+//         let char = str[i]
+
+//         if(result[char]){
+//             result[char] ++
+//         }
+//         else{
+//             result[char] = 1
+//         }
+//     }
+//      return result
+
+// }
+
+// console.log(frequency('hello world hi'))
+
+
+
+
+
+// 31 replace character in a string 
+
+// let str = "banana"
+
+// console.log(str.replace("a","o"))  // this replace first a with o
+
+
+
+// const replace = (str,oldChar,newChar)=>{
+
+//     let result = ""
+
+//     for(let i=0;i<str.length;i++){
+//         if(str[i] === oldChar )
+//         {
+//             result +=newChar
+//         }
+//         else{
+//             result +=str[i]
+//         }
+//     }
+//     return result
+
+// }
+
+// console.log(replace("banana","a","e"))
+
+
+
+
+// 32 find non repeting character not completed
+
+// const nonRepeating = (str)=>{
+
+//     let result = ""
+
+//     for(let i=0;i<str.length;i++){
+//         let char = str[i]
+
+//         if(!result.includes(char)){
+//             result +=char
+//         }
+//     }
+//     return result
+
+// }
+
+// console.log(nonRepeating("rraam"))
