@@ -582,18 +582,79 @@
 // 24 remove element from array of specific position
 
 
-const remove = (arr,position)=>{
+// const remove = (arr,position)=>{
 
-    if(position < 0 || position > arr.length){
-        return false
-    }
+//     if(position < 0 || position > arr.length){
+//         return false
+//     }
 
-    for(let i=position;i<arr.length;i++){
-        arr[i] = arr[i+1]
-    }
-    arr.length = arr.length -1
-    return arr
+//     for(let i=position;i<arr.length;i++){
+//         arr[i] = arr[i+1]  // 12345
+//     }
 
-}
+//     arr.length = arr.length - 1
+//     return arr
+// }
 
-console.log(remove([1,2,3,4,5],2))
+// console.log(remove([1,2,3,4,5],2))
+
+
+
+
+// 25 remove duplicate from an array
+
+// const remove = (arr)=>{
+
+//     let seen = []
+
+//     for(let i=0;i<arr.length;i++){
+//         if(!seen.includes(arr[i])){
+//             // seen.push(arr[i])
+//             seen[seen.length] = arr[i]
+//         }
+//     }
+//     return seen
+
+// }
+
+// console.log(remove([1,2,3,2,1,4,5,4]))
+
+
+
+
+
+// 26 sorting an array
+
+// const sort = (arr)=>{
+
+//     for(let i=0;i<arr.length;i++){
+//         for(let j=0;j<arr.length -i-1;j++){
+//             if(arr[j] > arr[j+1]){
+//                 let temp = arr[j]
+//                 arr[j] = arr[j+1]
+//                 arr[j+1] = temp
+//             }
+//         }
+//     }
+//     return arr
+// }
+
+// console.log(sort([2,13,3,1,5,4]))
+
+
+
+
+// 27 check whetrer the arr is sorted
+
+// const check = (arr)=>{
+
+//     // let ascending = true
+//     // let descinding = true
+
+//     for(let i=0;i<arr.length-1;i++){
+//         if(arr[i]>arr[i+1]) return false
+//     }
+//     return true
+// }
+
+// console.log(check([1,2,2,3]))

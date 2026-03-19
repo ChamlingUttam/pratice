@@ -554,21 +554,43 @@ longest common perfix
 
 //didit count
 
-const digit = (n)=>{
+// const digit = (n)=>{
 
-    let num = Math.abs(n)
+//     let num = Math.abs(n)
 
-    let count  = 0
+//     let count  = 0
 
-    while( num > 0)
-    {
-        num = Math.floor(num/10)
-        count ++
-    }
-    return count
+//     while( num > 0)
+//     {
+//         num = Math.floor(num/10)
+//         count ++
+//     }
+//     return count
 
 
 
-}
+// }
 
-console.log(digit(1234))
+// console.log(digit(1234))
+
+
+
+//frequency count 
+
+// const count = (arr)=>{
+
+//     let result = {}
+
+//     for(let i=0; i<arr.length;i++){
+//         let element = arr[i]
+//         if(result[element]){
+//             result[element]++
+//         }
+//         else{
+//             result[element] = 1
+//         }
+//     }
+//     return result
+// }
+
+// console.log(count([1,2,3,4,2,1,3]))
