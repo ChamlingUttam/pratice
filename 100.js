@@ -771,17 +771,105 @@
 
 // const nonRepeating = (str)=>{
 
+//     let seen ={}
 //     let result = ""
 
 //     for(let i=0;i<str.length;i++){
 //         let char = str[i]
+//         seen[char] = (seen[char] || 0) +1
+//     }
 
-//         if(!result.includes(char)){
-//             result +=char
+//     for (let i=0;i<str.length;i++){
+//         let char = str[i]
+//         if(seen[char] ===1)
+//         {
+//         //    return result +=char ///if only first non repeating char want to be dosply
+//          result +=char // if check all char which is not repeating
 //         }
 //     }
+
 //     return result
 
 // }
 
 // console.log(nonRepeating("rraam"))
+// console.log(nonRepeating("programming"))
+// console.log(nonRepeating("member"))
+
+
+
+
+
+
+
+// 33 repeating character
+
+// const repeating = (str)=>{
+
+//     let seen ={}
+//     let result = ""
+    
+//      for(let i=0;i<str.length;i++){
+//         let char = str[i]
+//         seen[char] = (seen[char] || 0) +1
+//      }
+//      for(let i=0;i<str.length;i++){
+//         let char = str[i]
+//         if(seen[char] > 1)
+//         {
+//         //    return  result +=char if we want first repeating char
+//         result +=char  //which char has repeated from the string
+//          }
+//      }
+//      return result
+// }
+
+// console.log(repeating("programmer"))
+
+
+
+
+
+// 34 check anagram
+
+// const anagram = (str,check)=>{
+
+//     if(str.length !== check.length){
+//         return false
+//     }
+
+//     let sortStr = str.split('').sort().join('')
+//     let sortCheck = check.split('').sort().join('')
+
+// if(sortStr.includes(sortCheck)){
+//     return true
+// }
+// return false
+
+// }
+
+// console.log(anagram("ram","mar"))
+// console.log(anagram("rams","mara"))
+// console.log(anagram("ramhe","mareh"))
+// console.log(anagram("listen","silent"))
+
+
+// const anagram  = (str1,str2)=>{
+
+//     let freq ={}
+
+//     for(let char of str1){
+//         freq[char] = (freq[char] ||0) +1
+//     }
+
+//     for(let chars of str2){
+//         if(!freq[chars]){
+//             return false
+//         }
+//         freq[chars] --
+//     }
+//     return true
+
+// }
+// console.log(anagram("silent","listen"))
+// console.log(anagram("rom","ram"))
