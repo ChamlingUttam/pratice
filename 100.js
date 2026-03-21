@@ -1034,7 +1034,7 @@
 
 //40 extract values from objects
 
-const api = {name:"ram",age:12,sex:"male"}
+// const api = {name:"ram",age:12,sex:"male"}
 
 // for(let values in api)
 // {
@@ -1053,3 +1053,91 @@ const api = {name:"ram",age:12,sex:"male"}
 
 
 //41 get all enteries from object
+
+// let obj = {a:1,b:2,c:5}
+
+// let result = []
+// for(let entries in obj){
+//     result.push(entries,obj[entries])
+
+
+// }
+// console.log(result)
+
+
+// 42 check if properties exist 
+
+// let obj = {a:1,b:3,c:4}
+
+// console.log(Object.hasOwn(obj,"a"))
+// console.log(Object.hasOwn(obj,"d")) //checks key
+// console.log(Object.values(obj).includes(4)) //checks values
+// console.log(Object.values(obj).includes(2))
+// console.log(Object.entries(obj).some(([key, value]) => key === "a" && value === 1)) //checks both but in pair 
+// console.log(Object.entries(obj).some(([key, value]) => key === "a" && value === 4))
+
+
+
+// 43 remove properties form obj
+
+// let obj = {a:1,b:2,c:3}
+
+// let {b,...rest} = obj  //this is useful in react too 
+
+// console.log(rest)  
+
+
+// 43 add property in object
+
+// let obj ={b:2,c:3}
+
+// let add = {...obj,a:1}
+// console.log(add)
+
+
+//44 update the  existing properties in object 
+
+// const obj  = {a:1,b:3}
+
+// let put = {...obj,b:2}
+// console.log(put)
+
+
+
+// let put = Object.assign({},obj,{b:5})
+// console.log(put)
+
+
+
+
+
+//45  swap keys and value
+
+// let obj ={a:1,b:2,c:4,name:"ram"}
+
+// let swap = {}
+// for(let key in obj)
+// {
+//     swap[obj[key]] = key
+//     // console.log(swap[obj[key]])
+//     // console.log(key)
+// }
+
+// console.log(swap)
+
+// 46 remove duplicate in object
+
+let obj = [
+    {
+        id:1,
+        name:"ram"
+    },
+    {
+        id:2,
+        name:"ram"
+    },
+    {
+        id:1,
+        name:"ramesh"
+    },
+]

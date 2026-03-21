@@ -549,24 +549,131 @@ longest common perfix
 // console.log(count('hsdkm sdfksjf sdfkjs sdfhs'))
 
 // first repeating character
-const repeating = (str) => {
-  let freq = {};
+// const repeating = (str) => {
+//   let freq = {};
 
-  for (let i = 0; i < str.length; i++) {
-    let char = str[i];
-    freq[char] = (freq[char] || 0) + 1;
-  }
+//   for (let i = 0; i < str.length; i++) {
+//     let char = str[i];
+//     freq[char] = (freq[char] || 0) + 1;
+//   }
 
-  for (let i = 0; i < str.length; i++) {
-    let check = str[i];
+//   for (let i = 0; i < str.length; i++) {
+//     let check = str[i];
 
-    if (freq[check] > 1) {
-        return check
+//     if (freq[check] > 1) {
+//         return check
+//     }
+//   }
+//   return freq
+// };
+
+// console.log(repeating("programmer"));
+// console.log(repeating("aabbcc"));
+
+
+
+// swap key with values
+
+// let obj = {a:1,name:'ram'}
+
+// let swap = {}
+
+// for(let key in obj)
+// {
+//   swap[obj[key]] = key
+//   console.log(obj[key])
+// }
+
+// console.log(swap)
+
+
+
+const removeDuplicates = (arr, key) => {
+  const seen = new Set();
+  const result = [];
+
+  for (const item of arr) {
+    // if (!item || item[key] === undefined) continue;
+
+    if (!seen.has(item[key])) {
+      seen.add(item[key]);
+      result.push(item);
     }
   }
-  return freq
+
+  return result;
 };
 
-console.log(repeating("programmer"));
-console.log(repeating("aabbcc"));
+// ─── TEST CASES ───────────────────────────────────────────
 
+// 1. Basic duplicate removal by number key
+const users = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+  { id: 1, name: "Alice Duplicate" },
+  { id: 3, name: "Charlie" },
+];
+console.log("Test 1 - Basic duplicate removal:");
+console.log(removeDuplicates(users, "id"));
+
+// 2. Duplicate by string key
+const products = [
+  { name: "Apple", price: 1 },
+  { name: "Banana", price: 2 },
+  { name: "Apple", price: 5 },
+];
+console.log("\nTest 2 - Duplicate by string key:");
+console.log(removeDuplicates(products, "name"));
+
+// 3. Null/undefined items in array
+const withNulls = [
+  { id: 1, name: "Alice" },
+  null,
+  undefined,
+  { id: 1, name: "Duplicate" },
+  { id: 2, name: "Bob" },
+];
+console.log("\nTest 3 - Null/undefined items:");
+console.log(removeDuplicates(withNulls, "id"));
+
+// 4. Missing key on some objects
+const missingKey = [
+  { id: 1, name: "Alice" },
+  { name: "No ID" },
+  { id: 2, name: "Bob" },
+];
+console.log("\nTest 4 - Missing key on some objects:");
+console.log(removeDuplicates(missingKey, "id"));
+
+// 5. Empty array
+console.log("\nTest 5 - Empty array:");
+console.log(removeDuplicates([], "id"));
+
+// 6. All duplicates
+const allSame = [
+  { id: 1, name: "Alice" },
+  { id: 1, name: "Alice" },
+  { id: 1, name: "Alice" },
+];
+console.log("\nTest 6 - All duplicates:");
+console.log(removeDuplicates(allSame, "id"));
+
+// ─── EXPECTED OUTPUT ──────────────────────────────────────
+
+// Test 1 - Basic duplicate removal:
+// [ { id: 1, name: 'Alice' }, { id: 2, name: 'Bob' }, { id: 3, name: 'Charlie' } ]
+
+// Test 2 - Duplicate by string key:
+// [ { name: 'Apple', price: 1 }, { name: 'Banana', price: 2 } ]
+
+// Test 3 - Null/undefined items:
+// [ { id: 1, name: 'Alice' }, { id: 2, name: 'Bob' } ]
+
+// Test 4 - Missing key on some objects:
+// [ { id: 1, name: 'Alice' }, { id: 2, name: 'Bob' } ]
+
+// Test 5 - Empty array:
+// []
+
+// Test 6 - All duplicates:
+// [ { id: 1, name: 'Alice' } ]
