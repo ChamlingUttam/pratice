@@ -11,8 +11,6 @@
 
 // reverse("hello")
 
-
-
 //palindrome
 
 // const palindrome = (str)=>{
@@ -35,7 +33,6 @@
 // }
 // palindrome("eye")
 
-
 // const palindrome = (str)=>{
 
 //     let reveresedStr = str.split("").reverse().join("")
@@ -46,12 +43,12 @@
 
 //         if(reveresedStr == str){
 //             console.log("is palindrome")
-//             return 
+//             return
 //         }
 //         else{
 //             console.log("not palindrome")
 //         }
-    
+
 // }
 // palindrome("hello")
 
@@ -63,7 +60,7 @@
 //         if(maxs<n){
 //             maxs = n
 //         }
-         
+
 //     }
 //     console.log(maxs)
 // }
@@ -83,19 +80,16 @@
 // }
 // max([-1,-2,-4,0])
 
-
-
-
 //remove dupilcate
 
 // const check = (arr)=>{
 //     console.log( [... new Set(arr)])
-    
+
 // }
 // check([1,2,2,3,3,4])
 
 // const duplicate = (arr)=>{
-    
+
 //     let pure = [arr[0]]
 
 //     for(let i= 1; i<arr.length;i++){
@@ -106,7 +100,6 @@
 //     }
 //     console.log(pure)
 
-    
 // }
 // duplicate([1,2,2,2,2,2,23,3,3,3,3,3,4,45])
 
@@ -123,9 +116,6 @@
 // }
 // sum([1,2,4,3,4])
 
-
-
-
 //fibonaicc series
 
 // const findFib = (n)=>{
@@ -140,15 +130,12 @@
 
 //     for(let i=2;i<n;i++){
 //        let temp = a+b
-//         a=b 
+//         a=b
 //         b=temp
 //     }
 //     console.log(b)
 // }
 // findFib(7)
-
-
-
 
 //check anagram
 
@@ -170,10 +157,7 @@
 // }
 // checkAnagram("ram","mard")
 
-
-
-
-//\COUNT THE VOWEL 
+//\COUNT THE VOWEL
 
 // const vowels = (str)=>{
 //     let count = 0
@@ -190,7 +174,6 @@
 // }
 // vowels('hello')
 
-
 // const vowels = (str)=>{
 //     let count = 0
 
@@ -206,7 +189,6 @@
 
 // }
 // console.log(vowels("aeioueeee"))
-
 
 // //two sum
 //  const twoSum = (arr,target)=>{
@@ -231,15 +213,11 @@
 
 //  console.log(twoSum([1,2,3,4],6))
 
-
-
-
-//generate random number 
+//generate random number
 
 // const generate = (n)=>{
 
 //     let randomNumber =[];
-    
 
 //     for(let i=0;i<n;i++){
 //            randomNumber.push(Math.floor(Math.random()*10))
@@ -249,12 +227,10 @@
 // }
 // generate(4)
 
-
 //remove dupilcate conscutive string
 
 // const remove = (arr)=>{
 
-    
 //     let first = [arr[0]]
 
 //     for(let i=1;i<arr.length;i++){
@@ -266,10 +242,6 @@
 
 // }
 // console.log(remove([1,2,3,4,4,4,4,4,4,2]))
-
-
-
-
 
 //remove duplicate array
 
@@ -283,11 +255,10 @@
 //         }
 
 //     }
-//     return result 
+//     return result
 // }
 // // remove([1,2,3,3,44,4,4,4,4,43,3,2,1])
 // console.log(remove([1,1,12,3,2,3,4,5,6,5,3,2,1]))
-
 
 // first latter captial
 
@@ -305,8 +276,6 @@
 // }
 // console.log(capital("hello us are"))
 
-
-
 //anagrams check
 
 // const anagram = (str,check)=>{
@@ -318,10 +287,8 @@
 // }
 // return true
 
-
 // }
 // console.log(anagram("qwertasy","ytrewsq"))
-
 
 //swap two number
 // const swap = (arr,p1,p2)=>{
@@ -334,7 +301,6 @@
 // }
 
 // console.log(swap([1,2,3,4,5],2,4))
-
 
 //swap two elements which are gretaer than 5
 
@@ -358,9 +324,6 @@
 // }
 // console.log(swap([1,6,3,4,5,7]))
 
-
-
-
 // reverse the string
 
 // const reverse = (str)=>{
@@ -378,9 +341,7 @@
 
 // console.log(reverse([1,2,3]))
 
-
-
-// remove elements 
+// remove elements
 // const remove = (nums,val)=>{
 
 //     let k = 0
@@ -401,14 +362,9 @@
 // console.log('K:', k)
 // console.log("nums :", nums.slice(0,k))
 
-
-
-
-
 //remove elements
 
 // const remove = (arr,val)=>{
-
 
 //     let k=0
 //     for(let i=0;i<arr.length;i++){
@@ -417,7 +373,7 @@
 //                 arr[k] = arr[i]
 //                 k++
 //             }
-        
+
 //     }
 //     return k
 // }
@@ -429,13 +385,10 @@
 // console.log(val)
 // console.log(arr)
 
-
-
-
 //remove duplicate elements of desire one
 
 // const remove = (arr,val)=>{
-//     let k =0 
+//     let k =0
 
 //     for (let i=0;i<arr.length;i++){
 //         if(arr[i] !== val)
@@ -454,11 +407,9 @@
 // console.log(k)
 // console.log(arr.slice(0,k))
 
-
 //length of the last word
 
 // const length = (str)=>{
-
 
 //     let spiltStr = str.split(' ')
 
@@ -466,13 +417,11 @@
 
 //     let lastWordLength = lastWord.length
 
-
 //     console.log(lastWord)
 //     console.log(lastWordLength)
 // }
 
 // length('hello there you are')
-
 
 /*
 longest common perfix
@@ -500,10 +449,7 @@ longest common perfix
 
 // console.log(prefix(['ram',"race",'rare']))
 
-
-
 //remove duplicate from array
-
 
 // const remove = (arr)=>{
 
@@ -522,12 +468,9 @@ longest common perfix
 
 // console.log(remove([1,2,3,4,5,1,2,3,4,5]))
 
-
 //two sum problem
 
-
 // const sum = (arr,target)=>{
-
 
 //     let seen = []
 //     let result = []
@@ -543,14 +486,11 @@ longest common perfix
 //             result.push(toFind,arr[i])
 //         }
 
-
 //     }
 //     return result
 // }
 
 // console.log(sum([1,2,3,4,5],9))
-
-
 
 //didit count
 
@@ -567,15 +507,11 @@ longest common perfix
 //     }
 //     return count
 
-
-
 // }
 
 // console.log(digit(1234))
 
-
-
-//frequency count 
+//frequency count
 
 // const count = (arr)=>{
 
@@ -595,21 +531,42 @@ longest common perfix
 
 // console.log(count([1,2,3,4,2,1,3]))
 
-
-
 //count a number of string
 
-const count = (str)=>{
+// const count = (str)=>{
 
-    let splitStr = str.split(' ')
+//     let splitStr = str.split(' ')
 
-    let result = 0
-    for(let i=0; i<splitStr.length;i++){
-        let line = splitStr[i]
-        result += line.length
+//     let result = 0
+//     for(let i=0; i<splitStr.length;i++){
+//         let line = splitStr[i]
+//         result += line.length
+//     }
+//     return result
+
+// }
+
+// console.log(count('hsdkm sdfksjf sdfkjs sdfhs'))
+
+// first repeating character
+const repeating = (str) => {
+  let freq = {};
+
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+    freq[char] = (freq[char] || 0) + 1;
+  }
+
+  for (let i = 0; i < str.length; i++) {
+    let check = str[i];
+
+    if (freq[check] > 1) {
+        return check
     }
-    return result
+  }
+  return freq
+};
 
-}
+console.log(repeating("programmer"));
+console.log(repeating("aabbcc"));
 
-console.log(count('hsdkm sdfksjf sdfkjs sdfhs'))

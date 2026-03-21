@@ -873,3 +873,183 @@
 // }
 // console.log(anagram("silent","listen"))
 // console.log(anagram("rom","ram"))
+
+
+//35 check the longest word in a string
+
+// const check = (str)=>{
+
+// let longest = ''
+
+// let splitStr  = str.split(' ')
+
+// for(let char of splitStr){
+//     if(char.length > longest.length){
+//         longest = char
+//     }
+// }
+// return longest
+// }
+// console.log(check("hello how are you codegpt in your room"))
+
+// const check = (str)=>{
+
+//     let longest = ""
+
+//     let splitStr = str.split(" ")
+
+//     for(let i=0;i<splitStr.length;i++)
+//     {
+//         if(splitStr[i].length > longest.length)
+//         {
+//             console.log(splitStr[i].length)
+//             longest = splitStr[i]
+//         }
+//     }
+//     return longest
+// }
+
+// console.log(check("qwerty jekj dfkds"))
+
+
+// 36 expensive product 
+
+// const api = [
+//     {
+//         "product":"fan",
+//         "price":250
+//     },
+//     {
+//         "product":"ball",
+//         "price":150
+//     },
+//     {
+//         "product":"book",
+//         "price":500
+//     },
+// ]
+
+// let expensive = 0
+
+// // console.log(api.length)
+// for(let i=0;i<api.length;i++){
+
+//     let price = api[i].price
+
+//     if(price > expensive)
+//     {
+//         expensive = price
+//     }
+// }
+// console.log(expensive)
+
+
+
+// const api = [
+//     {
+//         "product":"fan",
+//         "price":250
+//     },
+//     {
+//         "product":"ball",
+//         "price":150
+//     },
+//     {
+//         "product":"book",
+//         "price":500
+//     },
+// ]
+
+// let expensive = api[0]
+
+// for(let i=0;i<api.length;i++){
+
+//     if(api[i].price > expensive.price)
+//     {
+//         expensive = api[i]
+//     }
+// }
+// console.log(expensive)
+
+
+
+
+
+
+
+// 37 intresection of two array
+
+// const intersection = (arr1,arr2)=>{
+//     let result = []
+//     let removeDuplicate = [...new Set(arr2)]
+//     // console.log(removeDuplicate)
+//     for(let i=0;i<removeDuplicate.length;i++){
+//         if(arr1.includes(removeDuplicate[i]))
+//         {
+//             result.push(removeDuplicate[i])
+//         }
+//     }
+//     return result
+
+// }
+
+// console.log(intersection([1,2,3,4,5],[6,7,8,4,1,1,2]))
+
+
+
+
+
+//38 find all pairs with given target sum
+
+
+// const pairs = (arr,target)=>{
+
+//     let have = []
+//     let result = []
+//     for(let num of arr){
+//         let toFind = target - num 
+
+//         if(have.includes(toFind)){
+//             result.push(toFind,num)
+//         }
+//         else{
+//             have.push(num)
+//         }
+//     }
+
+//     return result
+// }
+
+// console.log(pairs([1,2,3,4,5,6],8))
+
+
+
+//39 extract key from an objects
+// let api ={a:1,b:2,c:3}
+   
+// for(let key in api){
+//     console.log(key)
+// }
+
+
+//40 extract values from objects
+
+const api = {name:"ram",age:12,sex:"male"}
+
+// for(let values in api)
+// {
+//     console.log(api[values])
+// }
+
+// let result = []
+// for(let values in api)
+// {
+//     result.push(api[values])
+// }
+// console.log(result)
+
+
+
+
+
+//41 get all enteries from object
