@@ -1127,17 +1127,40 @@
 
 // 46 remove duplicate in object
 
-let obj = [
-    {
-        id:1,
-        name:"ram"
-    },
-    {
-        id:2,
-        name:"ram"
-    },
-    {
-        id:1,
-        name:"ramesh"
-    },
-]
+// let obj = [
+//     {
+//         id:1,
+//         name:"ram"
+//     },
+//     {
+//         id:2,
+//         name:"ram"
+//     },
+//     {
+//         id:1,
+//         name:"ramesh"
+//     },
+// ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 47 print pattern
+let n = 5;
+for(let i = 0; i < n; i++){
+    let row = "";
+    for(let j = 0; j < n; j++){
+        row += "* ";
+    }
+    console.log(row);
+}
