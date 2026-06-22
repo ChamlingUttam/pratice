@@ -588,75 +588,75 @@ longest common perfix
 
 
 
-const removeDuplicates = (arr, key) => {
-  const seen = new Set();
-  const result = [];
+// const removeDuplicates = (arr, key) => {
+//   const seen = new Set();
+//   const result = [];
 
-  for (const item of arr) {
-    // if (!item || item[key] === undefined) continue;
+//   for (const item of arr) {
+//     // if (!item || item[key] === undefined) continue;
 
-    if (!seen.has(item[key])) {
-      seen.add(item[key]);
-      result.push(item);
-    }
-  }
+//     if (!seen.has(item[key])) {
+//       seen.add(item[key]);
+//       result.push(item);
+//     }
+//   }
 
-  return result;
-};
+//   return result;
+// };
 
-// ─── TEST CASES ───────────────────────────────────────────
+// // ─── TEST CASES ───────────────────────────────────────────
 
-// 1. Basic duplicate removal by number key
-const users = [
-  { id: 1, name: "Alice" },
-  { id: 2, name: "Bob" },
-  { id: 1, name: "Alice Duplicate" },
-  { id: 3, name: "Charlie" },
-];
-console.log("Test 1 - Basic duplicate removal:");
-console.log(removeDuplicates(users, "id"));
+// // 1. Basic duplicate removal by number key
+// const users = [
+//   { id: 1, name: "Alice" },
+//   { id: 2, name: "Bob" },
+//   { id: 1, name: "Alice Duplicate" },
+//   { id: 3, name: "Charlie" },
+// ];
+// console.log("Test 1 - Basic duplicate removal:");
+// console.log(removeDuplicates(users, "id"));
 
-// 2. Duplicate by string key
-const products = [
-  { name: "Apple", price: 1 },
-  { name: "Banana", price: 2 },
-  { name: "Apple", price: 5 },
-];
-console.log("\nTest 2 - Duplicate by string key:");
-console.log(removeDuplicates(products, "name"));
+// // 2. Duplicate by string key
+// const products = [
+//   { name: "Apple", price: 1 },
+//   { name: "Banana", price: 2 },
+//   { name: "Apple", price: 5 },
+// ];
+// console.log("\nTest 2 - Duplicate by string key:");
+// console.log(removeDuplicates(products, "name"));
 
-// 3. Null/undefined items in array
-const withNulls = [
-  { id: 1, name: "Alice" },
-  null,
-  undefined,
-  { id: 1, name: "Duplicate" },
-  { id: 2, name: "Bob" },
-];
-console.log("\nTest 3 - Null/undefined items:");
-console.log(removeDuplicates(withNulls, "id"));
+// // 3. Null/undefined items in array
+// const withNulls = [
+//   { id: 1, name: "Alice" },
+//   null,
+//   undefined,
+//   { id: 1, name: "Duplicate" },
+//   { id: 2, name: "Bob" },
+// ];
+// console.log("\nTest 3 - Null/undefined items:");
+// console.log(removeDuplicates(withNulls, "id"));
 
-// 4. Missing key on some objects
-const missingKey = [
-  { id: 1, name: "Alice" },
-  { name: "No ID" },
-  { id: 2, name: "Bob" },
-];
-console.log("\nTest 4 - Missing key on some objects:");
-console.log(removeDuplicates(missingKey, "id"));
+// // 4. Missing key on some objects
+// const missingKey = [
+//   { id: 1, name: "Alice" },
+//   { name: "No ID" },
+//   { id: 2, name: "Bob" },
+// ];
+// console.log("\nTest 4 - Missing key on some objects:");
+// console.log(removeDuplicates(missingKey, "id"));
 
-// 5. Empty array
-console.log("\nTest 5 - Empty array:");
-console.log(removeDuplicates([], "id"));
+// // 5. Empty array
+// console.log("\nTest 5 - Empty array:");
+// console.log(removeDuplicates([], "id"));
 
-// 6. All duplicates
-const allSame = [
-  { id: 1, name: "Alice" },
-  { id: 1, name: "Alice" },
-  { id: 1, name: "Alice" },
-];
-console.log("\nTest 6 - All duplicates:");
-console.log(removeDuplicates(allSame, "id"));
+// // 6. All duplicates
+// const allSame = [
+//   { id: 1, name: "Alice" },
+//   { id: 1, name: "Alice" },
+//   { id: 1, name: "Alice" },
+// ];
+// console.log("\nTest 6 - All duplicates:");
+// console.log(removeDuplicates(allSame, "id"));
 
 // ─── EXPECTED OUTPUT ──────────────────────────────────────
 
@@ -677,3 +677,24 @@ console.log(removeDuplicates(allSame, "id"));
 
 // Test 6 - All duplicates:
 // [ { id: 1, name: 'Alice' } ]
+
+
+
+
+function bubbleSort(arr) {
+  const n = arr.length;
+  for (let i = 0; i < n - 1; i++) {
+    let swapped = false;
+    for (let j = 0; j < n - 1 - i; j++) {
+      if (arr[j] > arr[j + 1]) {
+        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+        swapped = true;
+      }
+    }
+    if (!swapped) break; // array is already sorted
+  }
+  return arr;
+}
+
+// Example usage
+console.log(bubbleSort([5, 2, 9, 1, 5, 6])); // [1, 2, 5, 5, 6, 9]
